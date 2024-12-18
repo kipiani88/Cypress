@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('e-commerce test', () => {
   it('passes', () => {
     cy.visit('https://wk-modules.com/en/search-products/')
 
@@ -25,7 +25,7 @@ cy.logging()
     cy.get('.form-footer > .btn').type('18848')
     cy.get('.form-footer > .btn').click()
     
-        //არსებული მისამართის შეცვლა  
+    //არსებული მისამართის შეცვლა  
     //მისამართის წაშლა
     cy.get('[href="//wk-modules.com/en/address?id_address=8&delete=1&token=214a04320882d68ff266eae78cd5fcd2"] > span').click()
   })

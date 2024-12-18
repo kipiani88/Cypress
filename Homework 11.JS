@@ -1,5 +1,5 @@
 // დავალება 11 https://wk-modules.com/en/search-products/ 
-// დარეგისტრირდით https://fixed-eyes.demo.prestashop.com  ზე, დაწერეთ შემდეგი:
+// დარეგისტრირდით  ზე, დაწერეთ შემდეგი:
 //მომხმარებლის დეტალებს შეცვლა -   footer > YOUR ACCOUNT > Information- + შეამოწმეთ რომ შენახვის შემდეგ ცვლილებები აისახა.
 //ახალი მისამართის დამატება - footer > YOUR ACCOUNT > Add first address
 //არსებული მისამართის შეცვლა
