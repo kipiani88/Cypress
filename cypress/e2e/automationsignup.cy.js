@@ -1,0 +1,31 @@
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('https://automationexercise.com/')
+    cy.contains("Full-Fledged practice website for Automation Engineers").should("be.visible")
+    cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
+    cy.get('[data-qa="signup-name"]').type('Giorgi')
+    cy.get(':nth-child(3) > .top').click()
+    cy.get('[data-qa="signup-email"]').type("boohooh@gmail.com")
+    cy.get('[data-qa="signup-button"]').click()
+    cy.contains("Enter Account Information").should("be.visible")
+    cy.get('[data-qa="password"]').type("12345678")
+    cy.get('[data-qa="days"]').select('4')
+    cy.get('[data-qa="months"]').select('February')
+    cy.get('[data-qa="years"]').select('1994')
+    cy.get('[data-qa="years"]').type('Giorgi')
+    cy.get('[data-qa="last_name"]').type('Bakradze')
+    cy.get('[data-qa="address"]').type('Batumi')
+    cy.get('[data-qa="country"]').select('United States')
+    cy.get('[data-qa="state"]').type('New York')
+    cy.get('[data-qa="city"]').type('New York')
+    cy.get('[data-qa="zipcode"]').type('0888088')
+    cy.get('[data-qa="mobile_number"]').type('799099095')
+    cy.get('#newsletter').click()
+    cy.get('#optin').click()
+    cy.get('[data-qa="create-account"]').click()
+    cy.contains("Account Created!").should("be.visible")
+    
+
+
+  })
+})
